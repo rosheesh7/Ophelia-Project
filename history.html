@@ -37,17 +37,17 @@
         font-size: 20px;
         text-align: justify;
       }
-    </style>
+    </style><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body><center> 
-    <div class="logo">
+    <div class="logo" data-aos="flip-right">
       <a href="index.html"><img src="LOGO.png" /></a>
     </div></center>
     <main>
-      <div class="building">
+      <div class="building" data-aos="zoom-in" >
         <img src="history.png" />
       </div>
-      <div class="describe">
+      <div class="describe"   data-aos="zoom-in-right">
         <h2>
           Built-in 1928, the iconic art deco tower on the East River was
           originally known as the Panhellenic Tower.
@@ -66,5 +66,10 @@
         <i style="font-size: 20px ; "><u>Click on the Logo to return back to home page. Thankyou!</u></i>
       </div>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>

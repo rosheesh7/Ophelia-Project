@@ -71,12 +71,14 @@
         align-items: center;
     }
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
-    <div class="image">
+    <div class="image" data-aos="flip-up">
       <a href="index.html"> <img src="LOGO.png" alt="" /></a>
     </div>
-    <main class="main">
+    <main class="main" data-aos="zoom-in-up">
       <h1>Location and Hours</h1>
       <a           href="https://www.google.com/maps/place/Ophelia+Lounge+NYC/@40.753401,-73.9661736,17z/data=!3m1!4b1!4m6!3m5!1s0x89c258e210135473:0xb0ea26094aee0b2c!8m2!3d40.753401!4d-73.9661736!16s%2Fg%2F11hbnt91yy?entry=ttu"
 >
@@ -92,13 +94,15 @@
         >
       </button>
     </main>
-    <span class="hour">
+    <span class="hour" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
       <b>Monday- Wednesday: 5pm-11pm</b>
       <b>Thursday 5pm-12am</b>
       <b>Friday-Saturday: 5pm-2am</b>
       <b>Sunday 12pm-11pm</b>
     </span>
-    <div class="locate">
+    <div class="locate" data-aos="fade-up"
+    data-aos-duration="3000">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.3920549849067!2d-73.96617359999999!3d40.753401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e210135473%3A0xb0ea26094aee0b2c!2sOphelia%20Lounge%20NYC!5e0!3m2!1sne!2snp!4v1704785523589!5m2!1sne!2snp"
       width="1000px"
@@ -109,5 +113,10 @@
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>

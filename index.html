@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ophelia_NY</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <script src="script.js"></script>
@@ -24,14 +25,14 @@
 
           <li><a href="location.html">Location and hours</a></li>
           <button class="Reservations">
-            <li><a class="anker" href="reservation.html">Reservations</a></li>
+            <li data-aos="zoom-out"><a class="anker" href="reservation.html"  >Reservations</a></li>
           </button>
         </ul>
       </div>
     </nav>
     <main>
       
-      <div class="utube">
+      <div class="utube" >
         <iframe
           src="https://www.youtube.com/embed/XNksvZjGQ50?si=ARSRezc0IHCpojUh"
           title="YouTube video player"
@@ -41,7 +42,7 @@
         ></iframe>
       </div>
       <div>
-        <button class="Subscribe">
+        <button class="Subscribe"   data-aos="zoom-out">
           <a
             class="anker"
             href="https://www.youtube.com/@OpheliaNY"
@@ -51,10 +52,10 @@
           >
         </button>
       </div>
-      <div class="sunday_brunch">
+      <div class="sunday_brunch" data-aos="fade-up">
         <img src="sunday brunch.avif" alt="Sunday Brunch Menu" />
         <br />
-        <button class="sunday">
+        <button class="sunday"  data-aos="zoom-out">
           <a class="anker" href="reservation.html">Reservation for Sunday</a>
         </button>
       </div>
@@ -73,8 +74,9 @@
       </div>
     </main>
     <footer>
-      <span class="footer_left"
-        ><a href="https://www.facebook.com/ophelianewyork/" target="_blank">
+      <span class="footer_left" 
+      ><a href="https://www.facebook.com/ophelianewyork/" target="_blank">
+          
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="30"
@@ -137,5 +139,9 @@
         >
       </span>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
